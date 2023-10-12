@@ -1,6 +1,4 @@
 @import 'reset';
-
-
 /*
 justify-content (가로축의 레이아웃 설정)
 -- flex-start: 부모요소 안짝에서 왼쪽 정렬
@@ -17,14 +15,15 @@ justify-content (가로축의 레이아웃 설정)
     flex속성 안에서 줄바꿈 처리하기 위해서ㅓ는 부모요소에 flex-wrap : wrap;
 */
 section{
-    width: 400px;
-    height: 100px;
-    margin: 0px auto;
+    width: 80vw;
+    height: 60vh;
+    margin: 100px auto;
     background: lightblue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: space-between;
+    align-content: center;
+    flex-direction: row-reverse; // column-reverse = 세로 
 
     article{
         width: 100px;
